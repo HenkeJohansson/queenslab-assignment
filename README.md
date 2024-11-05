@@ -10,7 +10,7 @@ const stringFunction = (string, maxIdenticalCharsinRow) => {
   const lastXChars = [];
 
   for (let i = 0; i < string.length; i++) {
-    currentChar = string[i];
+    const currentChar = string[i];
     lastXChars.push(currentChar);
     // keep only the latest X characters so we later can check if we can add the current char
     lastXChars.splice(-maxIdenticalCharsinRow - 1, lastXChars.length - maxIdenticalCharsinRow);
